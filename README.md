@@ -17,7 +17,7 @@ ________________________________________________________________________________
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Languages and Tools used">Built With</a></li>
+        <li><a href="#Languages and Tools used in this project:">Languages and Tools Used</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
         <li><a href="#setting-up-the-bot-and-running-it">Setting up the bot and running it</a></li>
