@@ -10,4 +10,4 @@
   
   ## Authors
 
-- [@katherinepeterson](https://www.github.com/octokatherine)
+- [@Aritra Ghosh](https://github.com/TheCleverIdiott)
