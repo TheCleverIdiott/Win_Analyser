@@ -13,7 +13,7 @@ ________________________________________________________________________________
 <p align="center">
     <br />
     <br />
-    <a href="https://docs.google.com/presentation/d/1aW0mXd_KMrQAoglVSHsds1j-EZjfjYdo/edit?usp=sharing&ouid=102655819508828492309&rtpof=true&sd=true">View Presentation</a>
+    <a href="https://docs.google.com/presentation/d/1aW0mXd_KMrQAoglVSHsds1j-EZjfjYdo/edit?usp=sharing&ouid=102655819508828492309&rtpof=true&sd=true"> Click to View Presentation</a>
   </p>
 
 <br>
