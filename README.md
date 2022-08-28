@@ -56,7 +56,7 @@ ________________________________________________________________________________
 <br>
   
  ### Prerequisites
-  * Pythn [**Install Python**](https://python.org)
+  * Python - [**Install Python**](https://python.org)
   * Text Editor
   * Pandas (pip install
   * Tensorflow
