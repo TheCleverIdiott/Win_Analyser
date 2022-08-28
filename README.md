@@ -17,7 +17,7 @@ ________________________________________________________________________________
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Made with">Made with</a></li>
+        <li><a href="#Made With">Made With</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
         <li><a href="#setting-up-the-bot-and-running-it">Setting up the bot and running it</a></li>
@@ -29,7 +29,7 @@ ________________________________________________________________________________
   </ol>
 </details>
 
-<h3 align="left">Made with</h3>
+<h3 align="left">Made With</h3>
 <p align="left"> 
   <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
   <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
@@ -40,7 +40,9 @@ ________________________________________________________________________________
  ### Prerequisites
   * Python
   * Text Editor
-  * 
+  * Libraries:
+  ** Pandas
+  ** Tensorflow
   
   
   ## Authors
