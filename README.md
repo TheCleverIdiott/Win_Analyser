@@ -41,8 +41,8 @@ ________________________________________________________________________________
   * Python
   * Text Editor
   * Libraries:
-  ** Pandas
-  ** Tensorflow
+    *Pandas
+    *Tensorflow
   
   
   ## Authors
