@@ -9,7 +9,7 @@
 <h3 align="center">Our group consists of 4 members. Aritra Ghosh, Anoushka Sen, Aveepsa Sarkar, Subhojit Ghosh</h3>
 
 _______________________________________________________________________________________________________________________________________________________________________
-<br>
+
 <p align="center">
     <br />
     <br />
