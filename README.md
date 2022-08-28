@@ -58,7 +58,7 @@ ________________________________________________________________________________
  ### Prerequisites
   * Python - [**Install Python**](https://python.org)
   * Text Editor
-  * Pandas (pip install
+  * Pandas (`$ pip install pandas`)
   * Tensorflow
     
     
