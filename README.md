@@ -58,7 +58,7 @@ ________________________________________________________________________________
   * Python - [**Install Python**](https://python.org)
   * Text Editor
   * Pandas (`$ pip install pandas`)
-  * Tensorflow
+  * Tensorflow (`$ pip install tensorflow`)
     
     
 <br>
