@@ -14,4 +14,4 @@
   
   ## Authors
 
-- [@Aritra Ghosh](https://github.com/TheCleverIdiott)
+- [Aritra Ghosh](https://github.com/TheCleverIdiott)
