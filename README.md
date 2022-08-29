@@ -30,7 +30,6 @@ ________________________________________________________________________________
         <li><a href="#Made With">Made With</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
-        
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
