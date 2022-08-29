@@ -30,7 +30,7 @@ ________________________________________________________________________________
         <li><a href="#Made With">Made With</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
-        <li><a href="#setting-up-the-bot-and-running-it">Setting up the bot and running it</a></li>
+        
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
