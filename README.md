@@ -95,3 +95,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
   ## Authors
 
 - [Aritra Ghosh](https://github.com/TheCleverIdiott)
+- [Subhojit Ghosh](https://github.com/Subhojit666)
