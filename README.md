@@ -1,6 +1,6 @@
 
 <div id="top"></div>
-[![Contributors][contributors-shield]][https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors]
+[![Contributors][contributors-shield]][contributors-url]
 
 # AI-Score-Predictor
 
@@ -104,3 +104,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 - [Aritra Ghosh](https://github.com/TheCleverIdiott)
 - [Subhojit Ghosh](https://github.com/Subhojit666)
 - [Aveepsa Sarkar](https://github.com/LostCatinLostCity)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/s7arborne/Dseized-Bot.svg?style=for-the-badge
+[contributors-url]: https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors
