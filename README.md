@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/TheCleverIdiott/AI-Score-Predictort">
-    <img src="https://github.com/s7arborne/Dseized-Bot/blob/master/data/Dseized_Logo.gif" alt="Logo">
+    <img src="https://github.com/TheCleverIdiott/AI-Score-Predictor/blob/main/logo.jpeg" alt="Logo">
   </a>
 
 
