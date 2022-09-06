@@ -10,6 +10,7 @@
   <a href="https://github.com/TheCleverIdiott/AI-Score-Predictort">
     <img src="https://github.com/TheCleverIdiott/AI-Score-Predictor/blob/main/logo.jpeg" alt="Logo">
   </a>
+ </div>
 
 
 <h1 align="center">Hi 👋, We are a group of students working on an AI Score prediction system.</h1>
