@@ -4,6 +4,13 @@
 
 # AI-Score-Predictor
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/TheCleverIdiott/AI-Score-Predictort">
+    <img src="https://github.com/s7arborne/Dseized-Bot/blob/master/data/Dseized_Logo.gif" alt="Logo">
+  </a>
+
 
 <h1 align="center">Hi 👋, We are a group of students working on an AI Score prediction system.</h1>
 <h3 align="center">Our group consists of 4 members. Aritra Ghosh, Anoushka Sen, Aveepsa Sarkar, Subhojit Ghosh</h3>
