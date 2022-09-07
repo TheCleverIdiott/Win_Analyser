@@ -24,24 +24,33 @@ matches[matches["team"] == "Liverpool"].sort_values("date")
 
 
 matches["round"].value_counts()
-# the round column teklls you which match week it was played
+# the round column tells you which match week it was played
 #after running this we can see how many matches were played were in each week
 # we should have 38 each match week
 
 
 
 matches.dtypes
+#shows the data types, ML algos can only work with numeric data so any data we feed into the model must be numneric... so object must be converted
+
 
 del matches["comp"]
 del matches["notes"]
-
+#we delete unnecessary data ofr this
 
 matches["date"] = pd.to_datetime(matches["date"])
+# crdeating an column with datetim,e and opverwriting the existing column with date time
+
+
 matches["target"] = (matches["result"] == "W").astype("int")
 
 matches
 
+
+#creating predictors to build basic ML model that we can add forther complexity to later
+
 matches["venue_code"] = matches["venue"].astype("category").cat.codes
+#converting from string to categories and then converting those categoties to numbers
 matches["opp_code"] = matches["opponent"].astype("category").cat.codes
 matches["hour"] = matches["time"].str.replace(":.+", "", regex=True).astype("int")
 matches["day_code"] = matches["date"].dt.dayofweek
