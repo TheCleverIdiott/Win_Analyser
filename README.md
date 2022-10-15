@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
 
 
 # AI-Score-Predictor
