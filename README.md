@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
-
+[![MIT License][license-shield]][license-url]
 
 # AI-Score-Predictor
 
@@ -112,5 +112,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jagreetdg/Dseized-Bot.svg?style=for-the-badge
 [contributors-url]: https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors
-
+[license-shield]: https://img.shields.io/github/license/jagreetdg/Dseized-Bot.svg?style=for-the-badge
+[license-url]: https://github.com/TheCleverIdiott/AI-Score-Predictor/blob/main/LICENSE
 
