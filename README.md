@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors]
 
 
 # AI-Score-Predictor
