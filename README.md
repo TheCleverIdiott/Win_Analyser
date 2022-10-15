@@ -1,7 +1,7 @@
-<div id="top"></div>
+<div id="top">
 
 [![Contributors][contributors-shield]][https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors]
-
+</div>
 
 # AI-Score-Predictor
 
