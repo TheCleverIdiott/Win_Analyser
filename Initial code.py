@@ -68,5 +68,6 @@ test = matches[matches["date"] > '2022-01-01']
 
 predictors = ["venue_code", "opp_code", "hour", "day_code"]
 
+rf.fit(train[predictors], train["target"])
 
 preds = rf.predict(test[predictors])
