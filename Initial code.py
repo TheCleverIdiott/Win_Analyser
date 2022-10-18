@@ -62,6 +62,7 @@ matches
 from sklearn.ensemble import RandomForestClassifier
 
 rf = RandomForestClassifier(n_estimators=50, min_samples_split=10, random_state=1)
+#series of decision trees where each decision tree has slightly different parameters.
 
 train = matches[matches["date"] < '2022-01-01']
 test = matches[matches["date"] > '2022-01-01']
