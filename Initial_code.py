@@ -63,12 +63,31 @@ from sklearn.ensemble import RandomForestClassifier
 
 rf = RandomForestClassifier(n_estimators=50, min_samples_split=10, random_state=1)
 #series of decision trees where each decision tree has slightly different parameters.
+# n_estimators=50 is the number of decision trees we want to train.
+# n is directly proportional to run-time and accuracy.
+# min_samples_split=10 is the number of samples we wann ahave in a leaf of the tree before we split the node.
+# ther higher min_samples_split is the less likely we are to overfit but the lower our accuracy on the training data.
+# random state means thatif we run the run tyhe random forest multiple times we will get the same data as long as the data remains the same.
+
 
 train = matches[matches["date"] < '2022-01-01']
 test = matches[matches["date"] > '2022-01-01']
+#splitting our training and test data, whiuch is date-time data; train is using anything tyhat came before 2022 (past) and test is anything in 2022(present); then comopare the values to get accuarcy.
+# so basically we are using the past to predict the present and tallying it with the presently known values to get how accuarte our result is. This will tell us how accurate our model will be if we use present data to predict the actual future.
+
 
 predictors = ["venue_code", "opp_code", "hour", "day_code"]
+#passing predictor parameters.
 
 rf.fit(train[predictors], train["target"])
+# the .fit methid is basically going to train the random forest model with the passed parameters to predict the target, which is 0 if the team lost or drew and 1 if they won.
 
 preds = rf.predict(test[predictors])
+#generating predictions using the .predict method by passing our test data.
+
+
+# Now we need to figure out a way to determine the accuaracy of the model.
+# Important choice, so we'rte gonna try a couple of different metrics and see which one makews more sense.
+from sklearn.metrics import accuracy_score
+# accuracy s
+
