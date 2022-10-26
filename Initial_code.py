@@ -92,3 +92,15 @@ preds = rf.predict(test[predictors])
 from sklearn.metrics import accuracy_score
 # accuracy s
 
+acc= accuracy_score(test["target"], preds)
+print(acc)
+combined= pd.DataFrame(dict(actual=test["target"],prediction=preds))
+pd.crosstab(index=combined["actual"], columns=combined["prediction"])
+from sklearn.metrics import precision_score
+precision_score(test["target"], preds)
+
+
+
+
+
+
