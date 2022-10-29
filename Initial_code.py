@@ -32,7 +32,6 @@ matches["round"].value_counts()
 
 matches.dtypes
 #shows the data types, ML algos can only work with numeric data so any data we feed into the model must be numneric... so object must be converted
-#hi
 
 
 del matches["comp"]
@@ -52,6 +51,7 @@ matches
 
 matches["venue_code"] = matches["venue"].astype("category").cat.codes
 #converting from string to categories and then converting those categoties to numbers
+
 matches["opp_code"] = matches["opponent"].astype("category").cat.codes
 matches["hour"] = matches["time"].str.replace(":.+", "", regex=True).astype("int")
 matches["day_code"] = matches["date"].dt.dayofweek
