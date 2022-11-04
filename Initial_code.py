@@ -39,7 +39,7 @@ del matches["notes"]
 #we delete unnecessary data ofr this
 
 matches["date"] = pd.to_datetime(matches["date"])
-# crdeating an column with datetime and operwriting the existing column with date time
+# creating an column with datetime and operwriting the existing column with date time
 
 
 matches["target"] = (matches["result"] == "W").astype("int")
