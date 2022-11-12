@@ -3,7 +3,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![MIT License][license-shield]][license-url]
 
-# AI-Score-Predictor
+# AI-Win-Predictor
 
 <!-- PROJECT LOGO -->
 <br />
