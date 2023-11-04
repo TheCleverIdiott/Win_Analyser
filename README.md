@@ -102,10 +102,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
   
   ## Authors
 
-- [Aritra Ghosh](https://github.com/TheCleverIdiott)
+  [![Contributors][contributors-image]][contributors-link]
+
+[contributors-image]: https://contrib.rocks/image?repo=TheCleverIdiott/Win_Analyser
+[contributors-link]: https://github.com/TheCleverIdiott/Win_Analyser/graphs/contributors
+
 - [Subhojit Ghosh](https://github.com/Subhojit666)
-- [Aveepsa Sarkar](https://github.com/LostCatinLostCity)
-- [Anoushka Sen](https://github.com/senanoushka)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
