@@ -107,7 +107,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [contributors-image]: https://contrib.rocks/image?repo=TheCleverIdiott/Win_Analyser
 [contributors-link]: https://github.com/TheCleverIdiott/Win_Analyser/graphs/contributors
 
-- [Subhojit Ghosh](https://github.com/Subhojit666)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
