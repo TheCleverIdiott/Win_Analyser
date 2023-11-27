@@ -100,12 +100,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
   
   
-  ## Authors
+## Authors
 
-  [![Aritra Ghosh](https://github.com/TheCleverIdiott.png?size=60)](https://github.com/TheCleverIdiott "Aritra Ghosh on GitHub")
-  [![Anoushka Sen](https://github.com/senanoushka.png?size=60)](https://github.com/senanoushka "Anoushka Sen on GitHub")
-  [![Aveepsa Sarkar](https://github.com/LostCatinLostCity.png?size=60)](https://github.com/LostCatinLostCity "Aveepsa Sarkar on GitHub")
-  [![Subhojit Ghosh](https://github.com/Subhojit666.png?size=60)](https://github.com/Subhojit666 "Subhojit Ghosh on GitHub")
+[![Aritra Ghosh](https://github.com/TheCleverIdiott.png?size=60)](https://github.com/TheCleverIdiott "Aritra Ghosh on GitHub")
+[![Anoushka Sen](https://github.com/senanoushka.png?size=60)](https://github.com/senanoushka "Anoushka Sen on GitHub")
+[![Aveepsa Sarkar](https://github.com/LostCatinLostCity.png?size=60)](https://github.com/LostCatinLostCity "Aveepsa Sarkar on GitHub")
+
 
 <!--[![Contributors][contributors-image]][contributors-link]
 
