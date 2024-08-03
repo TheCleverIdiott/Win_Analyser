@@ -90,5 +90,9 @@ precision = precision_score(test['target'], preds)
 print(f'Precision: {precision:.2f}')
 ```
 
+## Delpoyment
+
+Check [this](https://github.com/TheCleverIdiott/Win_Analyser/blob/main/How%20to%20deploy.md) out
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
