@@ -1,123 +1,94 @@
-<div id="top"></div>
+# Real-Time Score Prediction using Machine Learning
 
-[![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
+## Description
+This project employs machine learning techniques to make real-time predictions of football match scores. By using Python and linear regression, the project processes match data and predicts the likelihood of a team winning, losing, or drawing. The dataset includes matches from the English Premier League, covering multiple seasons.
 
-# AI-Win-Predictor
+## Tech Stack
+- **Python**: Programming language used for implementing the project.
+- **Pandas**: Data manipulation and analysis library.
+- **Scikit-learn**: Machine learning library for Python.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/TheCleverIdiott/Win_Analyser">
-    <img src="https://github.com/TheCleverIdiott/AI-Score-Predictor/blob/main/logo.jpeg" alt="Logo">
-  </a>
- </div>
+## File Structure
+- `.gitignore`: Specifies files to be ignored by Git.
+- `LICENSE`: License for the project.
+- `Prediction.ipynb`: Jupyter notebook containing the prediction model and analysis.
+- `README.md`: Project documentation.
+- `code.py`: Python script for data preprocessing and model training.
+- `logo.jpeg`: Project logo.
+- `matches.csv`: Dataset containing match details.
 
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    ```
 
-<h1 align="center">Hi 👋, We are a group of students working on an AI Score prediction system.</h1>
-<h3 align="center">Our group consists of 4 members. Aritra Ghosh, Anoushka Sen, Aveepsa Sarkar, Subhojit Ghosh</h3>
+2. Create a virtual environment and activate it:
+    ```sh
+    python3 -m venv env
+    source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    ```
 
-_______________________________________________________________________________________________________________________________________________________________________
+3. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-<p align="center">
-    <br />
-    <br />
-    <a href="https://docs.google.com/presentation/d/1aW0mXd_KMrQAoglVSHsds1j-EZjfjYdo/edit?usp=sharing&ouid=102655819508828492309&rtpof=true&sd=true"> Click to View Presentation</a>
-  </p>
+## How to Run
+1. Ensure you are in the project directory.
+2. Run the Jupyter notebook:
+    ```sh
+    jupyter notebook Prediction.ipynb
+    ```
+3. Alternatively, you can run the Python script:
+    ```sh
+    python code.py
+    ```
 
-<br>
+## Usage
+- **Data Preprocessing**: The `code.py` script reads the `matches.csv` file, preprocesses the data, and prepares it for model training.
+- **Model Training**: The Random Forest classifier is trained on historical match data to predict future match outcomes.
+- **Prediction**: The trained model predicts match outcomes for the test dataset.
 
+## Possible Output
+The output of the model includes:
+- Predicted match outcomes (win, lose, draw) for each match in the test dataset.
+- Accuracy and precision scores to evaluate the model's performance.
 
+## Example
+```python
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import precision_score
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#Made With">Made With</a></li>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installing-dependencies">Installing Dependencies</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributions">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
+# Load data
+matches = pd.read_csv('matches.csv', index_col=0)
 
-<br>
+# Preprocess data
+matches['date'] = pd.to_datetime(matches['date'])
+matches['target'] = (matches['result'] == 'W').astype('int')
+matches['venue_code'] = matches['venue'].astype('category').cat.codes
+matches['opp_code'] = matches['opponent'].astype('category').cat.codes
+matches['hour'] = matches['time'].str.replace(":.+", "", regex=True).astype('int')
+matches['day_code'] = matches['date'].dt.dayofweek
 
+# Train-test split
+train = matches[matches['date'] < '2022-01-01']
+test = matches[matches['date'] > '2022-01-01']
 
+# Model training
+predictors = ['venue_code', 'opp_code', 'hour', 'day_code']
+rf = RandomForestClassifier(n_estimators=50, min_samples_split=10, random_state=1)
+rf.fit(train[predictors], train['target'])
 
-<h3 align="left">Made With</h3>
-<p align="left"> 
-  <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
-  <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
-  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
- <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
+# Prediction
+preds = rf.predict(test[predictors])
 
-<br>
-<br>
-  
- ### Prerequisites
-  * Python - [**Install Python**](https://python.org)
-  * Text Editor
-  * Pandas (`$ pip install pandas`)
-  * Tensorflow (`$ pip install tensorflow`)
-    
-    
-<br>
-<br>
-  
+# Evaluation
+precision = precision_score(test['target'], preds)
+print(f'Precision: {precision:.2f}')
+```
 
-<!-- CONTRIBUTING -->
-## Contributions
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- LICENSE -->
 ## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-  
-  
-## Authors
-
-[![Aritra Ghosh](https://github.com/TheCleverIdiott.png?size=60)](https://github.com/TheCleverIdiott "Aritra Ghosh on GitHub")
-[![Anoushka Sen](https://github.com/senanoushka.png?size=60)](https://github.com/senanoushka "Anoushka Sen on GitHub")
-[![Aveepsa Sarkar](https://github.com/LostCatinLostCity.png?size=60)](https://github.com/LostCatinLostCity "Aveepsa Sarkar on GitHub")
-
-
-<!--[![Contributors][contributors-image]][contributors-link]
-
-[contributors-image]: https://contrib.rocks/image?repo=TheCleverIdiott/Win_Analyser
-[contributors-link]: https://github.com/TheCleverIdiott/Win_Analyser/graphs/contributors-->
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jagreetdg/Dseized-Bot.svg?style=for-the-badge
-[contributors-url]: https://github.com/TheCleverIdiott/AI-Score-Predictor/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/jagreetdg/Dseized-Bot.svg?style=for-the-badge
-[license-url]: https://github.com/TheCleverIdiott/AI-Score-Predictor/blob/main/LICENSE
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
